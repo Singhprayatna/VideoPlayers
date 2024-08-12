@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,77 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 80%;
+  /* overflow: hidden; */
+}
+
+.playerContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.videoPlayer {
+  border-radius: 1em;
+  z-index: -1;
+}
+
+.controlsContainer {
+  margin-top: -3.5em;
+}
+
+.controls {
+  display: flex;
+  z-index: 1;
+  color: white;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.controlButton {
+  border: none;
+  background: none;
+}
+
+.timeline {
+  width: 100%;
+}
+
+.duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlButton:hover {
+  cursor: pointer;
+}
+.VolumeControls {
+  position: absolute;
+  right: 170px;
+  display: flex;
+  align-items: center;
+  width: 10%;
+  margin: 10px 0;
+}
+.volumeSlider {
+  width: 100%;
+}
+.centerControls{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
